@@ -22,6 +22,42 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 export default function Page() {
   return (
     <div className="flex justify-center items-center h-screen">
+      <div>
+      <Card className="w-[350px] h-[380px] relative m-2">
+          <CardHeader>
+            <CardTitle>
+                <span>Skills and Projects:</span>
+            </CardTitle>
+            <CardDescription>
+              Skills and Projects I've worked on
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div>
+              <p className="text-sm font-bold border-b-2 mb-2">Projects:</p>
+              <ul className="list-disc list-inside">
+                <li>Ephemeral</li>
+                <li>validOS</li>
+                <li>Anycode</li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-sm font-bold border-b-2 mb-2 mt-2">
+                Frameworks, Languages, and Platforms:
+              </p>
+              <ul className="list-disc list-inside">
+                <li>NextJS</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+          </CardContent>
+
+          <CardFooter className="absolute bottom-0 left-0">
+            <span className="text-xs text-gray-500">Skills are cool?</span>
+          </CardFooter>
+        </Card>
+      </div>
       <div className="flex">
         <Card className="w-[350px] h-[380px] relative m-2">
           <CardHeader>
@@ -38,21 +74,16 @@ export default function Page() {
           </CardHeader>
           <CardContent>
             <div>
-              <p className="text-sm font-bold border-b-2">Projects:</p>
-              <ul className="list-disc list-inside">
-                <li>Ephemeral</li>
-                <li>validOS</li>
-                <li>Anycode</li>
-              </ul>
-            </div>
-            <div>
-              <p className="text-sm font-bold border-b-2 mb-2">
-                Frameworks, Languages, and Platforms:
+              <p className="text-sm font-bold border-b-2 mb-2">About:</p>
+              <p className="text-sm">
+                I am a web developer who loves to make cool stuff. I am also a
+                gamer and a student. I am currently not working on anything.
               </p>
+              <p className="text-sm font-bold border-b-2 mt-2 mb-2">Things I'm learning:</p>
               <ul className="list-disc list-inside">
                 <li>NextJS</li>
-                <li>Javascript</li>
-                <li>HTML</li>
+                <li>Python</li>
+                <li>Vite</li>
               </ul>
             </div>
           </CardContent>
@@ -86,10 +117,11 @@ export default function Page() {
           </CardContent>
 
           <CardFooter className="absolute bottom-0 right-0">
-            <span className="text-xs text-gray-500">2nd card epic</span>
+            <span className="text-xs text-gray-500">Services are epic</span>
           </CardFooter>
         </Card>
       </div>
+      
     </div>
   );
 }
