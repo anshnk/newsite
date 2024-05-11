@@ -7,13 +7,6 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
